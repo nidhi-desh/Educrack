@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
-
-import ErrorBoundary from "../../../HOC/ErrorHandler/ErrorBoundary";
 
 import InputText from "../../ReusableUI/InputText";
 import PasswordInput from "../../ReusableUI/PasswordInput";

@@ -43,31 +43,12 @@ class InputText extends Component {
     }
 
     if (e.target.value && this.props.validation) {
-      if (
-        "email" === this.props.validationType &&
-        validateEmail(e.target.value)
-      ) {
-        this.setState({ hasValidationError: false });
-      } else if (
-        "number" === this.props.validationType &&
-        validateNumber(e.target.value) &&
-        this.props.minLength === e.target.value.length
-      ) {
-        this.setState({ hasValidationError: false });
-      } else if (
+ if (
         "alphaNumeric" === this.props.validationType &&
         validateAlphaNumeric(e.target.value)
       ) {
         this.setState({ hasValidationError: false });
-      } else if (
-        "alphabetic" === this.props.validationType &&
-        validateAlphabetic(e.target.value)
-      ) {
-        this.setState({ hasValidationError: false });
-      } else {
-        this.setState({ hasValidationError: true, hasError: false });
-        error = true;
-      }
+      } 
     }
 
     if (this.props.onChange) {
