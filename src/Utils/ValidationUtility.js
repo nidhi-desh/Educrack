@@ -13,9 +13,9 @@
     return result;
   };
   
-  export const validateAlphabetic = (dataString) => {
-    const re = /^[a-zA-Z ]*$/;
+
+  export const validateAlphaNumeric = (dataString) => {
+    const re = /^[a-zA-Z0-9_ ]*$/;
     let result = re.test(String(dataString));
     return result;
   };
-  
