@@ -49,10 +49,10 @@ class Login extends Component {
     const hasError = this.state.hasError;
     return (
       <div>
-        <div className="container-fluid login-page">
+        <div className="container-fluid">
           <div className="row ">
             <div className="col-sm-6 col-md-6 col-lg-6 remove-right-padding">
-              <label className="login-username-label">Username</label>
+              <label >Username</label>
             </div>
           </div>
           <div className="col-sm-6 col-md-6 col-lg-6 remove-padding">
@@ -70,7 +70,7 @@ class Login extends Component {
           <div className="form-group mt-4">
             <div className="row">
               <div className="col-sm-6 col-md-6 col-lg-6 remove-right-padding">
-                <label className="login-username-label">Password</label>
+                <label>Password</label>
               </div>
             </div>
             <div className="col-sm-6 col-md-6 col-lg-6">
@@ -95,7 +95,7 @@ class Login extends Component {
                   type="submit"
                   id="login "
                   buttonText="Login"
-                  className="login-text btn login-btn"
+                  className="btn login-btn"
                   onClick={this.handleLogin}
                   testId="login"
                   refCallback={(buttonDOM) => {

@@ -22,14 +22,7 @@
  
      this.props.onChange(e);
    };
- 
-   tooglePassword = (e) => {
-     let isEyeSlash = e.target.alt === 'eye';
-     this.setState({
-       showPassword: isEyeSlash ? true : false,
-       type: isEyeSlash ? 'password' : 'text',
-     });
-   };
+
  
    render() {
      return (
@@ -40,10 +33,10 @@
                  type={this.state.type}
                  className={
                    this.state.hasError
-                     ? `form-control username_password_text-eye error-field ${
+                     ? `form-control ${
                          this.props.customClass ? this.props.customClass : ''
                        }`
-                     : `form-control username_password_text-eye ${this.props.customClass ? this.props.customClass : ''}`
+                     : `form-control  ${this.props.customClass ? this.props.customClass : ''}`
                  }
                  value={this.props.value}
                  name={this.props.name}

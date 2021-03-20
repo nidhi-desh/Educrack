@@ -77,14 +77,14 @@ class InputText extends Component {
   render() {
     let optionalLabel = "";
     if (this.props.inputLabel && !this.props.required) {
-      optionalLabel = <span className="field-optional"> (optional)</span>;
+      optionalLabel = <span> (optional)</span>;
     }
     return (
      
           <div style={this.props.style} className={this.props.rootClass}>
             {this.props.inputLabel ? (
               <span>
-                <label className="field-heading">{this.props.inputLabel}</label>
+                <label>{this.props.inputLabel}</label>
                 {optionalLabel}
               </span>
             ) : (
@@ -114,10 +114,10 @@ class InputText extends Component {
                 type="text"
                 className={
                   this.state.hasError || this.state.hasValidationError
-                    ? `form-control username_password_text has-error ${
+                    ? `form-control has-error ${
                         this.props.customClass ? this.props.customClass : ""
                       }`
-                    : `form-control username_password_text ${
+                    : `form-control  ${
                         this.props.customClass ? this.props.customClass : ""
                       }`
                 }

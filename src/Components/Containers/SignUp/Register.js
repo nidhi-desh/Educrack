@@ -72,7 +72,7 @@ class Register extends Component {
           </div>
           <div className="row ">
             <div className="col-sm-6 col-md-6 col-lg-6 remove-right-padding">
-              <label className="login-username-label">Phone No</label>
+              <label>Phone No</label>
             </div>
           </div>
           <div className="col-sm-6 col-md-6 col-lg-6 remove-padding">
@@ -90,7 +90,7 @@ class Register extends Component {
           <div className="form-group mt-4">
             <div className="row">
               <div className="col-sm-6 col-md-6 col-lg-6 remove-right-padding">
-                <label className="login-username-label">Set Password</label>
+                <label>Set Password</label>
               </div>
             </div>
             <div className="col-sm-6 col-md-6 col-lg-6">
