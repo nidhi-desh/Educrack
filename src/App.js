@@ -1,9 +1,20 @@
-import './App.css';
+import { Router } from "react-router";
+import { BrowserRouter, Redirect } from 'react-router-dom';
+import "./App.css";
+import Routes from './Routes/Routes';
+
+import './Assets/Stylesheets/Main.scss';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-    </div>
+    <BrowserRouter>
+      <main>
+        <Routes />
+      </main>
+    </BrowserRouter>
   );
 }
 
